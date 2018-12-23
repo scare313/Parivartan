@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Parivartan</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="login">LOGIN</string>
+    <string name="guest">GUEST</string>
+    <string name="parivartan">Parivartan</string>
+    <string name="thankyou">ek badalaav laane ke liye dhanyavaad</string>
+</resources>
