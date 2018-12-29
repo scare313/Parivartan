@@ -21,11 +21,9 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        b1 = (Button)findViewById(R.id.button);
-        ed1 = (EditText)findViewById(R.id.editText);
-        ed2 = (EditText)findViewById(R.id.editText2);
 
-        b1.setOnClickListener(new View.OnClickListener() {
+
+     /*   b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(ed1.getText().toString().equals("admin") &&
@@ -45,6 +43,31 @@ public class Login extends AppCompatActivity {
                     }
                 }
             }
-        });
+        }); */
+    }
+
+    //DEV-NOTE : Change By Scare313 on 29/12/1018
+    public void login(View view){
+
+        b1 = (Button)findViewById(R.id.loginButton);
+        ed1 = (EditText)findViewById(R.id.editText);
+        ed2 = (EditText)findViewById(R.id.editText2);
+
+        if(ed1.getText().toString().equals("admin") &&
+                ed2.getText().toString().equals("admin")) {
+            Toast.makeText(getApplicationContext(),
+                    "Redirecting...",Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
+
+            tx1.setVisibility(View.VISIBLE);
+            tx1.setBackgroundColor(Color.RED);
+            counter--;
+            tx1.setText(Integer.toString(counter));
+
+            if (counter == 0) {
+                b1.setEnabled(false);
+            }
+        }
     }
 }
