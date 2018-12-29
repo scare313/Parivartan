@@ -14,7 +14,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginTop="22dp"
         android:gravity="center_horizontal"
-        android:text="Parivartan"
+        android:text="@string/parivartan"
         android:textColor="#fff"
         android:textSize="26sp"
         android:textStyle="bold" />
@@ -48,7 +48,7 @@
                     android:layout_marginTop="50dp"
                     android:drawableLeft="@drawable/mail"
                     android:drawableTint="#FF4081"
-                    android:hint="User Name"
+                    android:hint="@string/user_name"
                     android:inputType="textEmailAddress"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
@@ -64,7 +64,7 @@
                     android:layout_height="match_parent"
                     android:drawableLeft="@drawable/lock"
                     android:drawableTint="#FF4081"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:inputType="numberPassword"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
@@ -74,10 +74,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:paddingTop="5dp"
-                android:text="Forgot Password?" />
+                android:text="@string/forgot_password" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/loginButton"
                 android:layout_width="232dp"
                 android:layout_height="66dp"
                 android:layout_alignParentEnd="true"
@@ -88,7 +88,8 @@
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="109dp"
                 android:background="#d67601"
-                android:text="Sign in"
+                android:onClick="login"
+                android:text="@string/sign_in"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />
