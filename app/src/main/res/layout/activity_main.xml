@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imglogo"
         android:layout_width="238dp"
         android:layout_height="221dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="134dp"
-        android:src="@drawable/parivartan_logo"
-        android:id="@+id/imglogo"/>
+        android:contentDescription="@string/logo"
+        android:src="@drawable/parivartan_logo" />
 
 
     <TextView
